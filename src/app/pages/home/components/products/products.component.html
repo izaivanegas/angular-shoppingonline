@@ -1,0 +1,9 @@
+
+<div class="wrapper">
+    @for (product of products; track product.id) {
+        <app-product-card 
+          (add)="onAdd($event)" 
+          [product]="product"> 
+        </app-product-card>        
+    }
+</div>

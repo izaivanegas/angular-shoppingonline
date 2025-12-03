@@ -1,0 +1,30 @@
+
+<div class="wrapper">
+  <div class="brand-group" routerLink="/">
+    <img src="assets/images/menu.png" alt="" class="menu link" />
+    <img src="assets/images/logo.png" alt="logo" class="logo link" />
+    <div class="brand-name link">Shopping Store</div>
+  </div>
+  <div class="search-group">
+    <input type="search"  class="search-input" placeholder="Search" />
+    <div class="search-icon-wrapper link" >
+      <img src="assets/images/search.png" class="search-icon" alt=""/>
+    </div>
+  </div>
+  <div class="user-group">
+    <img src="assets/images/user.png" class="user-icon" alt="" /> 
+    <div class="cart" routerLink="/cart">
+      <img src="assets/images/cart.png" alt="" class="user-icon link" />
+      <span class="cart-count" >{{count()}}</span>
+      <span class="cart-total">{{ total() | number:"1.2-2"}}</span>
+    </div>
+  </div>
+</div>
+<div class="mobile-wrapper">
+  <div class="search-group">
+    <input type="search" class="search-input" placeholder="Search" />
+    <div class="search-icon-wrapper link" >
+      <img src="assets/images/search.png" class="search-icon"  alt=""/>
+    </div>
+  </div>
+</div>
